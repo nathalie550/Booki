@@ -22,18 +22,18 @@ body {
     padding: 0 50px;
 }
 
-.card,
-.card2,
-.card3 {  
+.card-main,
+.card-sponsored,
+.card-activities {  
     background: var(--white);
     border-radius: 20px;
     padding-bottom: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
  
-.card,
-.card2,
-.card3 img {
+.card-main,
+.card-sponsored,
+.card-activities img {
     object-fit: cover;
 }
 
@@ -109,7 +109,7 @@ nav ul {
 
 /*SECTION CLASS CONTENT*/
    /*BARRE DE RECHERCHE*/
-.content {
+.info-group {
    width: 100%;
     height: 281px;
     padding-bottom: 20px;
@@ -159,7 +159,7 @@ button {
 }
 
    /*FILTRES*/
-.filtres {
+.filterBar {
     max-width: 914px;
     min-height: 50px;
     display: flex;
@@ -173,7 +173,7 @@ button {
     
 }
 
-.filtres i {
+.filterBar i {
     color: var(--blue-color);
 }
 
@@ -225,7 +225,7 @@ button {
     gap: 40px;
 }
 
-.container1 {   
+.offers-main {   
     width: 62%; 
     height: 626px;
     padding: 15px;
@@ -234,30 +234,30 @@ button {
     box-sizing: border-box;
 } 
 
-.container1 h1 {
+.offers-main h1 {
     padding-left: 10px;
     margin-top: 0px;
     padding-top: 15px;
 
 }
-.container1 a {
+.offers-main a {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
 }
 
-.title-hebergements h3 {
+.title-main h3 {
     margin-top: auto;
     gap: 15px;
 }
 
-.title-hebergements p {
+.title-main p {
     margin-top: auto;
     margin-left: 10px;
 }
 
-.icon-hebergements {
+.icon-main {
     width: 12px;
     height: 12px;
     color: var(--blue-color);
@@ -266,11 +266,11 @@ button {
     flex-direction: row;
 }
 
-.icon-hebergements span i {
+.icon-main span i {
     color: var(--other-grey);
 }
 
-.card img {
+.card-main img {
     border: 5px solid var(--white);
     border-radius: 20px 20px 0px 0px;
     background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
@@ -291,7 +291,7 @@ button {
 
 /*LES PLUS POPULAIRES AVEC PHOTOS*/
 
-.container2 { 
+.offers-sponsored { 
     width: 38%;
     padding: 15px;
     border-radius: 20px;
@@ -301,7 +301,7 @@ button {
     flex-direction: column;
 } 
 
-.title_Populaires {
+.title-sponsored {
     color: var(--black);
     font-weight: 700;
     font-size: 22px;
@@ -311,20 +311,20 @@ button {
     align-items: center;
  }
 
- .title_Populaires i {
+ .title-sponsored i {
     width: 18px;
     height: 15.75px;
     color: var(--blue-color); 
     padding-right: 10px; 
 }
  
-.card2 {    
+.card-sponsored {    
     display: flex;
     flex-direction: row; 
     box-sizing: border-box;     
 }   
 
-.card2 img {
+.card-sponsored img {
   width: 137px;
   height: 144px;
   box-sizing: border-box;
@@ -332,22 +332,22 @@ button {
   border-radius: 20px 0px 0px 20px;
 }
 
-.text_activites {
+.text-sponsored {
    flex-direction: column;
 }
 
-.text_activites h3 {
+.text-sponsored h3 {
    gap: 15px;
    color: var(--black); 
    margin-left: 10px;
    margin-top: 10px;
 }
 
-.text_activites p {
+.text-sponsored p {
    margin-left: 10px;
 }
 
-.icon-activites {
+.icon-sponsored {
     display: flex;
     flex-direction: row;
     padding-top: 20px;
@@ -357,7 +357,7 @@ button {
     margin-bottom: 10px;
 }
 
-.icon-activites span i {
+.icon-sponsored span i {
    color: var(--other-grey);
 }
 
@@ -379,12 +379,12 @@ button {
     padding-bottom: 40px;
 }  
 
-.activites3 {
+.activities {
     display: flex;
     gap: 25px;
 }
 
-.card3 {
+.card-activities {
     width: 25%;
     background: var(--white);
     border: 1px solid #D9D9D9;
@@ -392,18 +392,18 @@ button {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
  }
 
-.card3 h3 {
+.card-activities h3 {
    padding-left: 5px;  
 }
 
-.card3 img {
+.card-activities img {
     border-radius: 20px 20px 0px 0px;;
     width: 100%;
     height: 380px;
     object-fit: cover; 
 }
 
-.carre_title {
+.carre-activities {
     border-radius: 0px 0px 20px 20px;
     padding-bottom: 5px;
 }
@@ -417,12 +417,12 @@ button {
     padding-top: 25px;
 }
 
-.articles {
+.articles-end {
     width: 250px;
     padding-left: 50px;
 }
   
-.articles h2 {
+.articles-end h2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
@@ -430,7 +430,7 @@ button {
     padding-bottom: 15px;
 } 
   
-.text li {
+.text-end li {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
